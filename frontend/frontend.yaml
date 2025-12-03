@@ -36,21 +36,7 @@ spec:
               port: 80
             initialDelaySeconds: 10
             periodSeconds: 20
-
       volumes:
         - name: config-volume
           configMap:
             name: frontend-config
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend-service
-spec:
-  selector:
-    app: frontend
-  type: ClusterIP   # or LoadBalancer for external access
-  ports:
-    - port: 80
-      targetPort: 3000
