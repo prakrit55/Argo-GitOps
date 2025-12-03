@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: your-docker-image:latest
+          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:a2ea7fb-staging
           ports:
             - containerPort: 5000
           env:
@@ -67,7 +67,11 @@ metadata:
 spec:
   selector:
     app: backend
-  type: ClusterIP   # or LoadBalancer for external access
+  type: ClusterIP # or LoadBalancer for external access
   ports:
     - port: 80
       targetPort: 3000
+  template:
+    spec:
+      containers:
+        - image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:a2ea7fb-staging
