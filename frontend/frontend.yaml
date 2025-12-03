@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/frontend:7df4070-prod
+          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/frontend:fe4209a-prod
           ports:
             - containerPort: 80
           volumeMounts:
