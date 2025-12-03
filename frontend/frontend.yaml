@@ -40,19 +40,3 @@ spec:
         - name: config-volume
           configMap:
             name: frontend-config
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend-service
-spec:
-  selector:
-    app: frontend
-  type: ClusterIP # or LoadBalancer for external access
-  ports:
-    - port: 80
-      targetPort: 3000
-  template:
-    spec:
-      containers:
-        - image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/frontend:a2ea7fb-staging
