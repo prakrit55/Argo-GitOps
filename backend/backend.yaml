@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:e817eef-staging
+          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:fc5bddd-staging
           ports:
             - containerPort: 5000
           env:
@@ -59,4 +59,3 @@ spec:
               limits:
                 cpu: "67m"
                 memory: "128Mi"
-
