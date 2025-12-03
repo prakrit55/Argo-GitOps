@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/frontend:e817eef-staging
+          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/frontend:a2151ad-staging
           ports:
             - containerPort: 80
           volumeMounts:
