@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:a2ea7fb-staging
+          image: 290993373923.dkr.ecr.us-east-1.amazonaws.com/backend:e817eef-staging
           ports:
             - containerPort: 5000
           env:
