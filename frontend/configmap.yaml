@@ -5,5 +5,5 @@ metadata:
 data:
   config.json: |
     {
-      "VITE_BASE_URL": "https://api.mycompany.com"
+      "VITE_BASE_URL": "backend-service.prod.svc.cluster.local"
     }
